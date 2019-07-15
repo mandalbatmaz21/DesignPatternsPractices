@@ -1,7 +1,7 @@
 package com.designpatterns.singletton;
 
 public class SingletonSecond {
-	
+	//lazy init
 	private SingletonSecond() {}
 	
 	private static SingletonSecond instance=null;
@@ -11,7 +11,7 @@ public class SingletonSecond {
 			instance= new SingletonSecond();
 			return instance;
 		}
-		return null;
+		return instance;
 	}
 	
 	
